@@ -105,7 +105,7 @@ export default class ModalDialog extends React.Component {
   handleGlobalClick = (event) => {
     if (this.shouldClickDismiss(event)) {
       if (typeof this.props.onClose == 'function') {
-        this.props.onClose();
+        this.props.onClose(event);
       }
     }
   };
