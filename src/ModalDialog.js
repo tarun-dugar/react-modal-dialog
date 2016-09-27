@@ -112,7 +112,7 @@ export default class ModalDialog extends React.Component {
   handleGlobalKeydown = (event) => {
     if (keycode(event) === 'esc') {
       if (typeof this.props.onClose == 'function') {
-        this.props.onClose();
+        this.props.onClose(event);
       }
     }
   };
